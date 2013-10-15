@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 
 # Thumbnails
@@ -15,6 +16,8 @@ Desktop.ini
 
 *.esproj
 
+=======
+>>>>>>> origin/master
 *.gem
 *.rbc
 .bundle
