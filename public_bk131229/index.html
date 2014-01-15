@@ -12,7 +12,7 @@
 <script>
 $(function(){
     $("#menubt").click(function () {
-        $("#menu, #content, .logo, #footer").toggleClass("active");
+        $("#menu, #content, #footer").toggleClass("active");
     });
 });
 </script>
@@ -20,22 +20,16 @@ $(function(){
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+<style>
+#container {
+	background: url(img/logo.png) no-repeat center;
+	background-size: 200px 51px;
+}
+</style>
 </head>
-<body class="top">
-<div class="background"></div>
+<body>
 <div id="container">
-  <div class="logo">
-	<ul id="scene" class="scene">
-		<li class="layer" data-depth="6.00"><div><img src="img/logo_01.png" class="swing-5"></div></li>
-		<li class="layer" data-depth="5.60"><div><img src="img/logo_02.png" class="swing-4"></div></li>
-		<li class="layer" data-depth="5.20"><div><img src="img/logo_03.png" class="swing-2"></div></li>
-		<li class="layer" data-depth="4.80"><div><img src="img/logo_04.png" class="swing-1"></div></li>
-		<li class="layer" data-depth="4.80"><div><img src="img/logo_05.png" class="swing-3"></div></li>
-		<li class="layer" data-depth="5.20"><div><img src="img/logo_06.png" class="swing-2"></div></li>
-		<li class="layer" data-depth="5.60"><div><img src="img/logo_07.png" class="swing-4"></div></li>
-		<li class="layer" data-depth="6.00"><div><img src="img/logo_08.png" class="swing-5"></div></li>
-	</ul>
-  </div>
+  <div id="content" class="top"></div>
   <div id="menu">
     <ul>
       <li id="menu1"><i class="icon"></i></li>
@@ -51,20 +45,5 @@ $(function(){
   </div>
   <div id="footer">Copyright &copy; 2013 topology All Rights Reserved.</div>
 </div>
-<script src="js/jquery.parallax.min.js"></script>
-<script>
-$('#scene').parallax({
-	calibrateX: false,
-	calibrateY: false,
-	invertX: false,
-	invertY: false,
-	limitX: false,
-	limitY: false,
-	scalarX: 2,
-	scalarY: 8,
-	frictionX: 0.2,
-	frictionY: 0.8
-});
-</script>
 </body>
 </html>

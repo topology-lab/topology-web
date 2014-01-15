@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>topology | profile</title>
+<meta name="viewport" content="initial-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" media="all">
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+    $("#menubt").click(function () {
+        $("#menu, #content, #footer").toggleClass("active");
+    });
+});
+</script>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+<div class="background"></div>
+<div id="container">
+  <div id="content" class="profile">
+    <h1>profile</h1>
+    <p class="profph"><img src="img/img_profile.png" alt="小松　平馬" width="100" height="100"></p>
+    <p class="profname">小松　平馬</p>
+    <p class="profen">Heima Komatsu</p>
+    <p class="profbd">1983.04.20</p>
+    <h2>PR</h2>
+    <p class="hsub">経歴について</p>
+    <dl>
+      <dt>2008年4月</dt>
+      <dd>某IT受託開発専門中小企業入社。<br>
+        3ヶ月程度の異なるプラットフォーム、開発環境の短期案件を並行して担当し、延べ12件以上のプロジェクトに参加。</dd>
+      <dt>2013年1月</dt>
+      <dd>2013年1月 フリーランスSEとして独立。<br>
+        仕事を受託する傍ら、<br>
+        「readableであり、ハードウェアリソースを有効に利用するプログラム」を追及するため日々再開発について学んでいる。</dd>
+    </dl>
+    <h2>skill</h2>
+    <p class="hsub">スキル</p>
+    <dl>
+      <dt>言語</dt>
+      <dd>Java, Scala, C, C++, C#, VB</dd>
+      <dt>DB</dt>
+      <dd>PostgreSQL, Oracle(9i,10g), MySQL(5.1,5.5), MongoDB,JavaDB, 独自DB(Java)</dd>
+      <dt>framework</dt>
+      <dd>Wicket, Play!,独自Java Framework</dd>
+      <dt>その他</dt>
+      <dd>並列処理プログラミング,Javaチューニング,AWSでの開発/試験/運用,herokuでのサービス運用,Jenkinsでのテスト自動化,Seleniumでのテスト自動化</dd>
+    </dl>
+    <h2>management</h2>
+    <p class="hsub">マネジメント経験</p>
+    <p>2011年10月、大規模案件にてリーダーとしてメンバー5名のマネジメントを担当。</p>
+    <p>システム全体の7割のボトルネックとなっていた機能を既存アプリケーションとのインターフェースは残し、別サーバとして分離。</p>
+    <p>サービス無停止での移行を成功させた。</p>
+    <h3>担当業務</h3>
+    <ul class="col2 mini">
+      <li>要件定義</li>
+      <li>仕様設計</li>
+      <li>外部設計</li>
+      <li>内部設計</li>
+      <li>実装</li>
+      <li>単体/連結/性能/運用テスト</li>
+    </ul>
+    <h3>参加プロジェクト概要</h3>
+    <ul class="mini">
+      <li>監視端末管理システム</li>
+      <li>音楽博物館 タッチパネル案内システム サーバ、CD制御組み込みプログラム開発</li>
+      <li>専用Webブラウザ 開発</li>
+      <li>携帯電話 基地局・端末間連携通信シミュレータ 開発</li>
+      <li>流通商品管理システム サーバ開発</li>
+      <li>環境法令Webシステム クライアント / サーバ開発</li>
+      <li>ストリーミングデータ管理システム サーバ開発</li>
+      <li>メニュー注文端末ポイント管理システム クライアント開発</li>
+      <li>ネットワーク機器管理/ネットワーク機器間通信監視Webシステム クライアント / サーバ開発</li>
+      <li>計測情報入力支援/帳票出力ツール 開発</li>
+      <li>携帯キャリア基幹システムFramework開発</li>
+    </ul>
+    <p class="mini">他多数</p>
+  </div>
+  <div id="menu">
+    <ul>
+      <li id="menu1"><i class="icon"></i></li>
+      <li id="menu2"><a href="index.html"><i class="icon"></i><span>top</span></a></li>
+      <li id="menu3"><a href="profile.html" class="current"><i class="icon"></i><span>profile</span></a></li>
+      <li id="menu4"><a href="carrier.html"><i class="icon"></i><span>carrier</span></a></li>
+      <li id="menu5"><i class="icon"></i></li>
+      <li id="menu6"><a href="library.html"><i class="icon"></i><span>library</span></a></li>
+      <li id="menu7"><a href="contact.html"><i class="icon"></i><span>contact</span></a></li>
+      <li id="menu8"><i class="icon"></i></li>
+      <li id="menubt"><i class="icon"></i></li>
+    </ul>
+  </div>
+  <div id="footer"><a href="#container"><img src="img/btn_pagetop.png" width="14" height="7" alt="∧"></a>Copyright &copy; 2013 topology All Rights Reserved.</div>
+</div>
+</body>
+</html>

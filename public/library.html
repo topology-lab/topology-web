@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>topology</title>
+<title>topology | library</title>
 <meta name="viewport" content="initial-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" type="text/css" href="css/default.css" media="all">
@@ -12,7 +12,7 @@
 <script>
 $(function(){
     $("#menubt").click(function () {
-        $("#menu, #content, .logo, #footer").toggleClass("active");
+        $("#menu, #content, #footer").toggleClass("active");
     });
 });
 </script>
@@ -21,50 +21,32 @@ $(function(){
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
 </head>
-<body class="top">
+<body>
 <div class="background"></div>
 <div id="container">
-  <div class="logo">
-	<ul id="scene" class="scene">
-		<li class="layer" data-depth="6.00"><div><img src="img/logo_01.png" class="swing-5"></div></li>
-		<li class="layer" data-depth="5.60"><div><img src="img/logo_02.png" class="swing-4"></div></li>
-		<li class="layer" data-depth="5.20"><div><img src="img/logo_03.png" class="swing-2"></div></li>
-		<li class="layer" data-depth="4.80"><div><img src="img/logo_04.png" class="swing-1"></div></li>
-		<li class="layer" data-depth="4.80"><div><img src="img/logo_05.png" class="swing-3"></div></li>
-		<li class="layer" data-depth="5.20"><div><img src="img/logo_06.png" class="swing-2"></div></li>
-		<li class="layer" data-depth="5.60"><div><img src="img/logo_07.png" class="swing-4"></div></li>
-		<li class="layer" data-depth="6.00"><div><img src="img/logo_08.png" class="swing-5"></div></li>
-	</ul>
+  <div id="content" class="library">
+    <h1>library</h1>
+    <h3>制作物</h3>
+    <ul class="proflink">
+      <li><a href="https://github.com/topology-lab">github</a></li>
+      <li><a href="http://qiita.com/topology-lab">Qiita</a></li>
+      <li><a href="http://hormonecraftsman.herokuapp.com/">炭火焼肉ホルモン職人 webサイト</a></li>
+    </ul>
   </div>
   <div id="menu">
     <ul>
       <li id="menu1"><i class="icon"></i></li>
-      <li id="menu2"><a href="index.html" class="current"><i class="icon"></i><span>top</span></a></li>
+      <li id="menu2"><a href="index.html"><i class="icon"></i><span>top</span></a></li>
       <li id="menu3"><a href="profile.html"><i class="icon"></i><span>profile</span></a></li>
       <li id="menu4"><a href="carrier.html"><i class="icon"></i><span>carrier</span></a></li>
       <li id="menu5"><i class="icon"></i></li>
-      <li id="menu6"><a href="library.html"><i class="icon"></i><span>library</span></a></li>
+      <li id="menu6"><a href="library.html" class="current"><i class="icon"></i><span>library</span></a></li>
       <li id="menu7"><a href="contact.html"><i class="icon"></i><span>contact</span></a></li>
       <li id="menu8"><i class="icon"></i></li>
       <li id="menubt"><i class="icon"></i></li>
     </ul>
   </div>
-  <div id="footer">Copyright &copy; 2013 topology All Rights Reserved.</div>
+  <div id="footer"><a href="#container"><img src="img/btn_pagetop.png" width="14" height="7" alt="∧"></a>Copyright &copy; 2013 topology All Rights Reserved.</div>
 </div>
-<script src="js/jquery.parallax.min.js"></script>
-<script>
-$('#scene').parallax({
-	calibrateX: false,
-	calibrateY: false,
-	invertX: false,
-	invertY: false,
-	limitX: false,
-	limitY: false,
-	scalarX: 2,
-	scalarY: 8,
-	frictionX: 0.2,
-	frictionY: 0.8
-});
-</script>
 </body>
 </html>
