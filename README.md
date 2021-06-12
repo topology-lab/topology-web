@@ -6,35 +6,35 @@ topology HP source.
 
 MIT LISENCE
 
-## ƒ[ƒJƒ‹ŠJ”­ŠÂ‹«
+## ãƒ­ãƒ¼ã‚«ãƒ«é–‹ç™ºç’°å¢ƒ
 
-### ƒRƒ}ƒ“ƒh
+### ã‚³ãƒžãƒ³ãƒ‰
 1. docker-compose up --build
 
-### ŽQl
-- ‚Ü‚³‚É‚â‚ë‚¤‚Æ‚µ‚Ä‚¢‚½‚±‚Æ
-  - š[Docker‚ðŽg‚Á‚Äsinatra‚ÌŠJ”­ŠÂ‹«‚ðì‚é](https://qiita.com/masayoko/items/e0d308ae7bda4849fdaa)
-- ‚½‚Ç‚è’…‚­‚Ü‚Å‚ÉŽQl‚É‚È‚è‚»‚¤‚¾‚Á‚½ƒTƒCƒg
-  - [Docker Compose‚ÅSinatra‚ÌŠJ”­ŠÂ‹«‚ð\’z‚·‚é](https://takagi.blog/building-sinatra-development-environment-with-docker-compose/)
-  - [Ruby3\.0\.0‚©‚çwebrick‚ªíœ‚³‚ê‚ÄSinatra‚ÌŠÂ‹«\’z‚Å¢˜f‚µ‚½Œ](https://qiita.com/onoda_kenta/items/88cf7840904f8b144043)
+### å‚è€ƒ
+- ã¾ã•ã«ã‚„ã‚ã†ã¨ã—ã¦ã„ãŸã“ã¨
+  - â˜…[Dockerã‚’ä½¿ã£ã¦sinatraã®é–‹ç™ºç’°å¢ƒã‚’ä½œã‚‹](https://qiita.com/masayoko/items/e0d308ae7bda4849fdaa)
+- ãŸã©ã‚Šç€ãã¾ã§ã«å‚è€ƒã«ãªã‚Šãã†ã ã£ãŸã‚µã‚¤ãƒˆ
+  - [Docker Composeã§Sinatraã®é–‹ç™ºç’°å¢ƒã‚’æ§‹ç¯‰ã™ã‚‹](https://takagi.blog/building-sinatra-development-environment-with-docker-compose/)
+  - [Ruby3\.0\.0ã‹ã‚‰webrickãŒå‰Šé™¤ã•ã‚Œã¦Sinatraã®ç’°å¢ƒæ§‹ç¯‰ã§å›°æƒ‘ã—ãŸä»¶](https://qiita.com/onoda_kenta/items/88cf7840904f8b144043)
   - [Heroku Ruby Support \| Heroku Dev Center](https://devcenter.heroku.com/articles/ruby-support#ruby-versions)
 
-### •K—v‚Èƒtƒ@ƒCƒ‹
+### å¿…è¦ãªãƒ•ã‚¡ã‚¤ãƒ«
 - Dockerfile
 - docker-compose.yml
 - Gemfile
 
 ## Heroku
 
-### ŽÀs‚³‚ê‚éƒRƒ}ƒ“ƒh‚ð’è‹`‚·‚éƒtƒ@ƒCƒ‹
+### å®Ÿè¡Œã•ã‚Œã‚‹ã‚³ãƒžãƒ³ãƒ‰ã‚’å®šç¾©ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«
 - config.ru
 
 ### resource
 - public/*
 
-### •s—v‚»‚¤‚¾‚¯‚Ç•K—v‚¾‚Á‚½ƒtƒ@ƒCƒ‹
+### ä¸è¦ãã†ã ã‘ã©å¿…è¦ã ã£ãŸãƒ•ã‚¡ã‚¤ãƒ«
 - Gemfile.lock
-  - ‚È‚¢‚ÆHeroku‚ÅƒfƒvƒƒC‚·‚é‚Æ‚«‚ÉˆÈ‰ºƒGƒ‰[‚ªo‚é
+  - ãªã„ã¨Herokuã§ãƒ‡ãƒ—ãƒ­ã‚¤ã™ã‚‹ã¨ãã«ä»¥ä¸‹ã‚¨ãƒ©ãƒ¼ãŒå‡ºã‚‹
 ```bash:error
 -----> Building on the Heroku-20 stack
 -----> Determining which buildpack to use for this app
@@ -46,4 +46,21 @@ grep: /tmp/build_54b6e07d/Gemfile.lock: No such file or directory
  !
  !     Push rejected, failed to compile Ruby app.
  !     Push failed
+```
+
+### Procfileã¯ãªãã¦ã‚‚å‹•ã
+- ãŸã ã—ä»¥ä¸‹ã®è­¦å‘Šãƒ­ã‚°ãŒdeployæ™‚ã«ã§ã‚‹ã€‚
+```bash:warning
+###### WARNING:
+       No Procfile detected, using the default web server.
+       We recommend explicitly declaring how to boot your server process via a Procfile.
+       https://devcenter.heroku.com/articles/ruby-default-web-server
+-----> Discovering process types
+       Procfile declares types     -> (none)
+       Default types for buildpack -> console, rake, web
+-----> Compressing...
+       Done: 16.1M
+-----> Launching...
+       Released v10
+       https://topology-web.herokuapp.com/ deployed to Heroku
 ```
