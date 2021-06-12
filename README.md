@@ -9,8 +9,7 @@ MIT LISENCE
 ## ローカル開発環境
 
 ### コマンド
-1. docker-compose build
-2. docker-compose up
+1. docker-compose up --build
 
 ### 参考
 - まさにやろうとしていたこと
@@ -33,5 +32,18 @@ MIT LISENCE
 ### resource
 - public/*
 
-### 不要そうなファイル
+### 不要そうだけど必要だったファイル
 - Gemfile.lock
+  - ないとHerokuでデプロイするときに以下エラーが出る
+```bash:error
+-----> Building on the Heroku-20 stack
+-----> Determining which buildpack to use for this app
+-----> Ruby app detected
+grep: /tmp/build_54b6e07d/Gemfile.lock: No such file or directory
+-----> Compiling Ruby/NoLockfile
+ !
+ !     Gemfile.lock required. Please check it in.
+ !
+ !     Push rejected, failed to compile Ruby app.
+ !     Push failed
+```
